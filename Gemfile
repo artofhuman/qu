@@ -10,5 +10,6 @@ group :test do
   gem 'activesupport', :require => false
   gem 'statsd-ruby', :require => false
   gem 'rake'
-  gem "rspec", "~> 2.14.1"
+  gem "rspec"
+  gem 'appraisal'
 end

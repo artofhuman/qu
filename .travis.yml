@@ -6,8 +6,10 @@ rvm:
 services:
   - mongodb
   - redis
-script: bundle exec rake unattended_spec
+script: bundle exec appraisal rake unattended_spec
 cache: bundler
 gemfile:
-  - Gemfile
-  - Gemfile-rails4
+  - gemfiles/rails_3.2.gemfile
+  - gemfiles/rails_4.0.gemfile
+  - gemfiles/rails_4.1.gemfile
+  - gemfiles/rails_4.2.gemfile
